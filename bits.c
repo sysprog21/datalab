@@ -111,7 +111,7 @@ NOTES:
  */
 int absVal(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -124,7 +124,7 @@ int absVal(int x)
  */
 int addOK(int x, int y)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -137,7 +137,7 @@ int addOK(int x, int y)
  */
 int allEvenBits(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -150,7 +150,7 @@ int allEvenBits(int x)
  */
 int allOddBits(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -163,7 +163,7 @@ int allOddBits(int x)
  */
 int anyEvenBit(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -176,7 +176,7 @@ int anyEvenBit(int x)
  */
 int anyOddBit(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -188,7 +188,7 @@ int anyOddBit(int x)
  */
 int bang(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -200,7 +200,7 @@ int bang(int x)
  */
 int bitAnd(int x, int y)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -212,7 +212,7 @@ int bitAnd(int x, int y)
  */
 int bitCount(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -227,7 +227,7 @@ int bitCount(int x)
  */
 int bitMask(int highbit, int lowbit)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -240,7 +240,7 @@ int bitMask(int highbit, int lowbit)
  */
 int bitMatch(int x, int y)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -252,7 +252,7 @@ int bitMatch(int x, int y)
  */
 int bitNor(int x, int y)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -264,7 +264,7 @@ int bitNor(int x, int y)
  */
 int bitOr(int x, int y)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -276,7 +276,7 @@ int bitOr(int x, int y)
  */
 int bitParity(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -289,7 +289,7 @@ int bitParity(int x)
  */
 int bitReverse(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -301,7 +301,7 @@ int bitReverse(int x)
  */
 int bitXor(int x, int y)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -315,7 +315,7 @@ int bitXor(int x, int y)
  */
 int byteSwap(int x, int n, int m)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -327,7 +327,7 @@ int byteSwap(int x, int n, int m)
  */
 int conditional(int x, int y, int z)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -339,7 +339,7 @@ int conditional(int x, int y, int z)
  */
 int copyLSB(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -351,7 +351,7 @@ int copyLSB(int x)
  */
 int distinctNegation(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -364,7 +364,7 @@ int distinctNegation(int x)
  */
 int dividePower2(int x, int n)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -375,7 +375,7 @@ int dividePower2(int x, int n)
  */
 int evenBits(void)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -391,7 +391,7 @@ int evenBits(void)
  */
 int ezThreeFourths(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -405,7 +405,7 @@ int ezThreeFourths(int x)
  */
 int fitsBits(int x, int n)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -418,7 +418,7 @@ int fitsBits(int x, int n)
  */
 int fitsShort(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -434,7 +434,7 @@ int fitsShort(int x)
  */
 unsigned floatAbsVal(unsigned uf)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -451,7 +451,7 @@ unsigned floatAbsVal(unsigned uf)
  */
 int floatFloat2Int(unsigned uf)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -465,7 +465,7 @@ int floatFloat2Int(unsigned uf)
  */
 unsigned floatInt2Float(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -481,7 +481,7 @@ unsigned floatInt2Float(int x)
  */
 int floatIsEqual(unsigned uf, unsigned ug)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -497,7 +497,7 @@ int floatIsEqual(unsigned uf, unsigned ug)
  */
 int floatIsLess(unsigned uf, unsigned ug)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -513,7 +513,7 @@ int floatIsLess(unsigned uf, unsigned ug)
  */
 unsigned floatNegate(unsigned uf)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -531,7 +531,7 @@ unsigned floatNegate(unsigned uf)
  */
 unsigned floatPower2(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -547,7 +547,7 @@ unsigned floatPower2(int x)
  */
 unsigned floatScale1d2(unsigned uf)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -563,7 +563,7 @@ unsigned floatScale1d2(unsigned uf)
  */
 unsigned floatScale2(unsigned uf)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -579,7 +579,7 @@ unsigned floatScale2(unsigned uf)
  */
 unsigned floatScale64(unsigned uf)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -593,7 +593,7 @@ unsigned floatScale64(unsigned uf)
  */
 unsigned floatUnsigned2Float(unsigned u)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -606,7 +606,7 @@ unsigned floatUnsigned2Float(unsigned u)
  */
 int getByte(int x, int n)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -619,7 +619,7 @@ int getByte(int x, int n)
  */
 int greatestBitPos(int x)
 {
-    return 2;
+    return 42;
 }
 
 /* howManyBits - return the minimum number of bits required to represent x in
@@ -650,7 +650,7 @@ int howManyBits(int x)
  */
 int implication(int x, int y)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -662,7 +662,7 @@ int implication(int x, int y)
  */
 int intLog2(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -677,7 +677,7 @@ int intLog2(int x)
  */
 int isAsciiDigit(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -689,7 +689,7 @@ int isAsciiDigit(int x)
  */
 int isEqual(int x, int y)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -701,7 +701,7 @@ int isEqual(int x, int y)
  */
 int isGreater(int x, int y)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -713,7 +713,7 @@ int isGreater(int x, int y)
  */
 int isLess(int x, int y)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -725,7 +725,7 @@ int isLess(int x, int y)
  */
 int isLessOrEqual(int x, int y)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -737,7 +737,7 @@ int isLessOrEqual(int x, int y)
  */
 int isNegative(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -749,7 +749,7 @@ int isNegative(int x)
  */
 int isNonNegative(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -762,7 +762,7 @@ int isNonNegative(int x)
  */
 int isNonZero(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -774,7 +774,7 @@ int isNonZero(int x)
  */
 int isNotEqual(int x, int y)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -786,7 +786,7 @@ int isNotEqual(int x, int y)
  */
 int isPallindrome(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -798,7 +798,7 @@ int isPallindrome(int x)
  */
 int isPositive(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -811,7 +811,7 @@ int isPositive(int x)
  */
 int isPower2(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -823,7 +823,7 @@ int isPower2(int x)
  */
 int isTmax(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -835,7 +835,7 @@ int isTmax(int x)
  */
 int isTmin(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -847,7 +847,7 @@ int isTmin(int x)
  */
 int isZero(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -860,7 +860,7 @@ int isZero(int x)
  */
 int leastBitPos(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -873,7 +873,7 @@ int leastBitPos(int x)
  */
 int leftBitCount(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -886,7 +886,7 @@ int leftBitCount(int x)
  */
 int logicalNeg(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -899,7 +899,7 @@ int logicalNeg(int x)
  */
 int logicalShift(int x, int n)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -910,7 +910,7 @@ int logicalShift(int x, int n)
  */
 int minusOne(void)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -926,7 +926,7 @@ int minusOne(void)
  */
 int multFiveEighths(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -938,7 +938,7 @@ int multFiveEighths(int x)
  */
 int negate(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -949,7 +949,7 @@ int negate(int x)
  */
 int oddBits(void)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -962,7 +962,7 @@ int oddBits(void)
  */
 int remainderPower2(int x, int n)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -976,7 +976,7 @@ int remainderPower2(int x, int n)
  */
 int replaceByte(int x, int n, int c)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -989,7 +989,7 @@ int replaceByte(int x, int n, int c)
  */
 int rotateLeft(int x, int n)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -1002,7 +1002,7 @@ int rotateLeft(int x, int n)
  */
 int rotateRight(int x, int n)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -1017,7 +1017,7 @@ int rotateRight(int x, int n)
  */
 int satAdd(int x, int y)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -1031,7 +1031,7 @@ int satAdd(int x, int y)
  */
 int satMul2(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -1047,7 +1047,7 @@ int satMul2(int x)
  */
 int satMul3(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -1060,7 +1060,7 @@ int satMul3(int x)
  */
 int sign(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -1073,7 +1073,7 @@ int sign(int x)
  */
 int signMag2TwosComp(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -1084,7 +1084,7 @@ int signMag2TwosComp(int x)
  */
 int specialBits(void)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -1097,7 +1097,7 @@ int specialBits(void)
  */
 int subtractionOK(int x, int y)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -1108,7 +1108,7 @@ int subtractionOK(int x, int y)
  */
 int thirdBits(void)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -1119,7 +1119,7 @@ int thirdBits(void)
  */
 int tmax(void)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -1130,7 +1130,7 @@ int tmax(void)
  */
 int tmin(void)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -1145,7 +1145,7 @@ int tmin(void)
  */
 int trueFiveEighths(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -1160,7 +1160,7 @@ int trueFiveEighths(int x)
  */
 int trueThreeFourths(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -1174,7 +1174,7 @@ int trueThreeFourths(int x)
  */
 int twosComp2SignMag(int x)
 {
-    return 2;
+    return 42;
 }
 
 /*
@@ -1187,5 +1187,5 @@ int twosComp2SignMag(int x)
  */
 int upperBits(int n)
 {
-    return 2;
+    return 42;
 }
