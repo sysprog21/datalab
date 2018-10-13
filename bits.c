@@ -113,6 +113,7 @@ int absVal(int x)
 {
     return 2;
 }
+
 /*
  * addOK - Determine if can compute x+y without overflow
  *   Example: addOK(0x80000000,0x80000000) = 0,
@@ -125,6 +126,7 @@ int addOK(int x, int y)
 {
     return 2;
 }
+
 /*
  * allEvenBits - return 1 if all even-numbered bits in word set to 1
  *   where bits are numbered from 0 (least significant) to 31 (most significant)
@@ -137,6 +139,7 @@ int allEvenBits(int x)
 {
     return 2;
 }
+
 /*
  * allOddBits - return 1 if all odd-numbered bits in word set to 1
  *   where bits are numbered from 0 (least significant) to 31 (most significant)
@@ -149,6 +152,7 @@ int allOddBits(int x)
 {
     return 2;
 }
+
 /*
  * anyEvenBit - return 1 if any even-numbered bit in word set to 1
  *   where bits are numbered from 0 (least significant) to 31 (most significant)
@@ -161,6 +165,7 @@ int anyEvenBit(int x)
 {
     return 2;
 }
+
 /*
  * anyOddBit - return 1 if any odd-numbered bit in word set to 1
  *   where bits are numbered from 0 (least significant) to 31 (most significant)
@@ -173,6 +178,7 @@ int anyOddBit(int x)
 {
     return 2;
 }
+
 /*
  * bang - Compute !x without using !
  *   Examples: bang(3) = 0, bang(0) = 1
@@ -184,6 +190,7 @@ int bang(int x)
 {
     return 2;
 }
+
 /*
  * bitAnd - x&y using only ~ and |
  *   Example: bitAnd(6, 5) = 4
@@ -195,6 +202,7 @@ int bitAnd(int x, int y)
 {
     return 2;
 }
+
 /*
  * bitCount - returns count of number of 1's in word
  *   Examples: bitCount(5) = 2, bitCount(7) = 3
@@ -206,6 +214,7 @@ int bitCount(int x)
 {
     return 2;
 }
+
 /*
  * bitMask - Generate a mask consisting of all 1's
  *   lowbit and highbit
@@ -220,6 +229,7 @@ int bitMask(int highbit, int lowbit)
 {
     return 2;
 }
+
 /*
  * bitMatch - Create mask indicating which bits in x match those in y
  *            using only ~ and &
@@ -232,6 +242,7 @@ int bitMatch(int x, int y)
 {
     return 2;
 }
+
 /*
  * bitNor - ~(x|y) using only ~ and &
  *   Example: bitNor(0x6, 0x5) = 0xFFFFFFF8
@@ -243,6 +254,7 @@ int bitNor(int x, int y)
 {
     return 2;
 }
+
 /*
  * bitOr - x|y using only ~ and &
  *   Example: bitOr(6, 5) = 7
@@ -254,6 +266,7 @@ int bitOr(int x, int y)
 {
     return 2;
 }
+
 /*
  * bitParity - returns 1 if x contains an odd number of 0's
  *   Examples: bitParity(5) = 0, bitParity(7) = 1
@@ -265,6 +278,7 @@ int bitParity(int x)
 {
     return 2;
 }
+
 /*
  * bitReverse - Reverse bits in a 32-bit word
  *   Examples: bitReverse(0x80000002) = 0x40000001
@@ -277,6 +291,7 @@ int bitReverse(int x)
 {
     return 2;
 }
+
 /*
  * bitXor - x^y using only ~ and &
  *   Example: bitXor(4, 5) = 1
@@ -288,6 +303,7 @@ int bitXor(int x, int y)
 {
     return 2;
 }
+
 /*
  * byteSwap - swaps the nth byte and the mth byte
  *  Examples: byteSwap(0x12345678, 1, 3) = 0x56341278
@@ -301,6 +317,7 @@ int byteSwap(int x, int n, int m)
 {
     return 2;
 }
+
 /*
  * conditional - same as x ? y : z
  *   Example: conditional(2,4,5) = 4
@@ -312,6 +329,7 @@ int conditional(int x, int y, int z)
 {
     return 2;
 }
+
 /*
  * copyLSB - set all bits of result to least significant bit of x
  *   Example: copyLSB(5) = 0xFFFFFFFF, copyLSB(6) = 0x00000000
@@ -323,6 +341,7 @@ int copyLSB(int x)
 {
     return 2;
 }
+
 /*
  * distinctNegation - returns 1 if x != -x.
  *     and 0 otherwise
@@ -334,6 +353,7 @@ int distinctNegation(int x)
 {
     return 2;
 }
+
 /*
  * dividePower2 - Compute x/(2^n), for 0 <= n <= 30
  *  Round toward zero
@@ -346,6 +366,7 @@ int dividePower2(int x, int n)
 {
     return 2;
 }
+
 /*
  * evenBits - return word with all even-numbered bits set to 1
  *   Legal ops: ! ~ & ^ | + << >>
@@ -356,6 +377,7 @@ int evenBits(void)
 {
     return 2;
 }
+
 /*
  * ezThreeFourths - multiplies by 3/4 rounding toward 0,
  *   Should exactly duplicate effect of C expression (x*3/4),
@@ -371,6 +393,7 @@ int ezThreeFourths(int x)
 {
     return 2;
 }
+
 /*
  * fitsBits - return 1 if x can be represented as an
  *  n-bit, two's complement integer.
@@ -384,6 +407,7 @@ int fitsBits(int x, int n)
 {
     return 2;
 }
+
 /*
  * fitsShort - return 1 if x can be represented as a
  *   16-bit, two's complement integer.
@@ -396,6 +420,7 @@ int fitsShort(int x)
 {
     return 2;
 }
+
 /*
  * floatAbsVal - Return bit-level equivalent of absolute value of f for
  *   floating point argument f.
@@ -411,6 +436,7 @@ unsigned floatAbsVal(unsigned uf)
 {
     return 2;
 }
+
 /*
  * floatFloat2Int - Return bit-level equivalent of expression (int) f
  *   for floating point argument f.
@@ -427,6 +453,7 @@ int floatFloat2Int(unsigned uf)
 {
     return 2;
 }
+
 /*
  * floatInt2Float - Return bit-level equivalent of expression (float) x
  *   Result is returned as unsigned int, but
@@ -440,6 +467,7 @@ unsigned floatInt2Float(int x)
 {
     return 2;
 }
+
 /*
  * floatIsEqual - Compute f == g for floating point arguments f and g.
  *   Both the arguments are passed as unsigned int's, but
@@ -455,6 +483,7 @@ int floatIsEqual(unsigned uf, unsigned ug)
 {
     return 2;
 }
+
 /*
  * floatIsLess - Compute f < g for floating point arguments f and g.
  *   Both the arguments are passed as unsigned int's, but
@@ -470,6 +499,7 @@ int floatIsLess(unsigned uf, unsigned ug)
 {
     return 2;
 }
+
 /*
  * floatNegate - Return bit-level equivalent of expression -f for
  *   floating point argument f.
@@ -485,6 +515,7 @@ unsigned floatNegate(unsigned uf)
 {
     return 2;
 }
+
 /*
  * floatPower2 - Return bit-level equivalent of the expression 2.0^x
  *   (2.0 raised to the power x) for any 32-bit integer x.
@@ -502,6 +533,7 @@ unsigned floatPower2(int x)
 {
     return 2;
 }
+
 /*
  * floatScale1d2 - Return bit-level equivalent of expression 0.5*f for
  *   floating point argument f.
@@ -517,6 +549,7 @@ unsigned floatScale1d2(unsigned uf)
 {
     return 2;
 }
+
 /*
  * floatScale2 - Return bit-level equivalent of expression 2*f for
  *   floating point argument f.
@@ -532,6 +565,7 @@ unsigned floatScale2(unsigned uf)
 {
     return 2;
 }
+
 /*
  * floatScale64 - Return bit-level equivalent of expression 64*f for
  *   floating point argument f.
@@ -547,6 +581,7 @@ unsigned floatScale64(unsigned uf)
 {
     return 2;
 }
+
 /*
  * floatUnsigned2Float - Return bit-level equivalent of expression (float) u
  *   Result is returned as unsigned int, but
@@ -560,6 +595,7 @@ unsigned floatUnsigned2Float(unsigned u)
 {
     return 2;
 }
+
 /*
  * getByte - Extract byte n from word x
  *   Bytes numbered from 0 (least significant) to 3 (most significant)
@@ -572,6 +608,7 @@ int getByte(int x, int n)
 {
     return 2;
 }
+
 /*
  * greatestBitPos - return a mask that marks the position of the
  *               most significant 1 bit. If x == 0, return 0
@@ -584,6 +621,7 @@ int greatestBitPos(int x)
 {
     return 2;
 }
+
 /* howManyBits - return the minimum number of bits required to represent x in
  *             two's complement
  *  Examples: howManyBits(12) = 5
@@ -600,6 +638,7 @@ int howManyBits(int x)
 {
     return 0;
 }
+
 /*
  * implication - return x -> y in propositional logic - 0 for false, 1
  * for true
@@ -613,6 +652,7 @@ int implication(int x, int y)
 {
     return 2;
 }
+
 /*
  * intLog2 - return floor(log base 2 of x), where x > 0
  *   Example: intLog2(16) = 4
@@ -624,6 +664,7 @@ int intLog2(int x)
 {
     return 2;
 }
+
 /*
  * isAsciiDigit - return 1 if 0x30 <= x <= 0x39 (ASCII codes for characters '0'
  * to '9')
@@ -638,6 +679,7 @@ int isAsciiDigit(int x)
 {
     return 2;
 }
+
 /*
  * isEqual - return 1 if x == y, and 0 otherwise
  *   Examples: isEqual(5,5) = 1, isEqual(4,5) = 0
@@ -649,6 +691,7 @@ int isEqual(int x, int y)
 {
     return 2;
 }
+
 /*
  * isGreater - if x > y  then return 1, else return 0
  *   Example: isGreater(4,5) = 0, isGreater(5,4) = 1
@@ -660,6 +703,7 @@ int isGreater(int x, int y)
 {
     return 2;
 }
+
 /*
  * isLess - if x < y  then return 1, else return 0
  *   Example: isLess(4,5) = 1.
@@ -671,6 +715,7 @@ int isLess(int x, int y)
 {
     return 2;
 }
+
 /*
  * isLessOrEqual - if x <= y  then return 1, else return 0
  *   Example: isLessOrEqual(4,5) = 1.
@@ -682,6 +727,7 @@ int isLessOrEqual(int x, int y)
 {
     return 2;
 }
+
 /*
  * isNegative - return 1 if x < 0, return 0 otherwise
  *   Example: isNegative(-1) = 1.
@@ -693,6 +739,7 @@ int isNegative(int x)
 {
     return 2;
 }
+
 /*
  * isNonNegative - return 1 if x >= 0, return 0 otherwise
  *   Example: isNonNegative(-1) = 0.  isNonNegative(0) = 1.
@@ -704,6 +751,7 @@ int isNonNegative(int x)
 {
     return 2;
 }
+
 /*
  * isNonZero - Check whether x is nonzero using
  *              the legal operators except !
@@ -716,6 +764,7 @@ int isNonZero(int x)
 {
     return 2;
 }
+
 /*
  * isNotEqual - return 0 if x == y, and 1 otherwise
  *   Examples: isNotEqual(5,5) = 0, isNotEqual(4,5) = 1
@@ -727,6 +776,7 @@ int isNotEqual(int x, int y)
 {
     return 2;
 }
+
 /*
  * isPallindrome - Return 1 if bit pattern in x is equal to its mirror image
  *   Example: isPallindrome(0x01234567E6AC2480) = 1
@@ -738,6 +788,7 @@ int isPallindrome(int x)
 {
     return 2;
 }
+
 /*
  * isPositive - return 1 if x > 0, return 0 otherwise
  *   Example: isPositive(-1) = 0.
@@ -749,6 +800,7 @@ int isPositive(int x)
 {
     return 2;
 }
+
 /*
  * isPower2 - returns 1 if x is a power of 2, and 0 otherwise
  *   Examples: isPower2(5) = 0, isPower2(8) = 1, isPower2(0) = 0
@@ -761,6 +813,7 @@ int isPower2(int x)
 {
     return 2;
 }
+
 /*
  * isTmax - returns 1 if x is the maximum, two's complement number,
  *     and 0 otherwise
@@ -772,6 +825,7 @@ int isTmax(int x)
 {
     return 2;
 }
+
 /*
  * isTmin - returns 1 if x is the minimum, two's complement number,
  *     and 0 otherwise
@@ -783,6 +837,7 @@ int isTmin(int x)
 {
     return 2;
 }
+
 /*
  * isZero - returns 1 if x == 0, and 0 otherwise
  *   Examples: isZero(5) = 0, isZero(0) = 1
@@ -794,6 +849,7 @@ int isZero(int x)
 {
     return 2;
 }
+
 /*
  * leastBitPos - return a mask that marks the position of the
  *               least significant 1 bit. If x == 0, return 0
@@ -806,6 +862,7 @@ int leastBitPos(int x)
 {
     return 2;
 }
+
 /*
  * leftBitCount - returns count of number of consective 1's in
  *     left-hand (most significant) end of word.
@@ -818,6 +875,7 @@ int leftBitCount(int x)
 {
     return 2;
 }
+
 /*
  * logicalNeg - implement the ! operator, using all of
  *              the legal operators except !
@@ -830,6 +888,7 @@ int logicalNeg(int x)
 {
     return 2;
 }
+
 /*
  * logicalShift - shift x to the right by n, using a logical shift
  *   Can assume that 0 <= n <= 31
@@ -842,6 +901,7 @@ int logicalShift(int x, int n)
 {
     return 2;
 }
+
 /*
  * minusOne - return a value of -1
  *   Legal ops: ! ~ & ^ | + << >>
@@ -852,6 +912,7 @@ int minusOne(void)
 {
     return 2;
 }
+
 /*
  * multFiveEighths - multiplies by 5/8 rounding toward 0.
  *   Should exactly duplicate effect of C expression (x*5/8),
@@ -867,6 +928,7 @@ int multFiveEighths(int x)
 {
     return 2;
 }
+
 /*
  * negate - return -x
  *   Example: negate(1) = -1.
@@ -878,6 +940,7 @@ int negate(int x)
 {
     return 2;
 }
+
 /*
  * oddBits - return word with all odd-numbered bits set to 1
  *   Legal ops: ! ~ & ^ | + << >>
@@ -888,6 +951,7 @@ int oddBits(void)
 {
     return 2;
 }
+
 /*
  * remainderPower2 - Compute x%(2^n), for 0 <= n <= 30
  *   Negative arguments should yield negative remainders
@@ -900,6 +964,7 @@ int remainderPower2(int x, int n)
 {
     return 2;
 }
+
 /*
  * replaceByte(x,n,c) - Replace byte n in x with c
  *   Bytes numbered from 0 (LSB) to 3 (MSB)
@@ -913,6 +978,7 @@ int replaceByte(int x, int n, int c)
 {
     return 2;
 }
+
 /*
  * rotateLeft - Rotate x to the left by n
  *   Can assume that 0 <= n <= 31
@@ -925,6 +991,7 @@ int rotateLeft(int x, int n)
 {
     return 2;
 }
+
 /*
  * rotateRight - Rotate x to the right by n
  *   Can assume that 0 <= n <= 31
@@ -937,6 +1004,7 @@ int rotateRight(int x, int n)
 {
     return 2;
 }
+
 /*
  * satAdd - adds two numbers but when positive overflow occurs, returns
  *          maximum possible value, and when negative overflow occurs,
@@ -951,6 +1019,7 @@ int satAdd(int x, int y)
 {
     return 2;
 }
+
 /*
  * satMul2 - multiplies by 2, saturating to Tmin or Tmax if overflow
  *   Examples: satMul2(0x30000000) = 0x60000000
@@ -964,6 +1033,7 @@ int satMul2(int x)
 {
     return 2;
 }
+
 /*
  * satMul3 - multiplies by 3, saturating to Tmin or Tmax if overflow
  *  Examples: satMul3(0x10000000) = 0x30000000
@@ -979,6 +1049,7 @@ int satMul3(int x)
 {
     return 2;
 }
+
 /*
  * sign - return 1 if positive, 0 if zero, and -1 if negative
  *  Examples: sign(130) = 1
@@ -991,6 +1062,7 @@ int sign(int x)
 {
     return 2;
 }
+
 /*
  * signMag2TwosComp - Convert from sign-magnitude to two's complement
  *   where the MSB is the sign bit
@@ -1003,6 +1075,7 @@ int signMag2TwosComp(int x)
 {
     return 2;
 }
+
 /*
  * specialBits - return bit pattern 0xffca3fff
  *   Legal ops: ! ~ & ^ | + << >>
@@ -1013,6 +1086,7 @@ int specialBits(void)
 {
     return 2;
 }
+
 /*
  * subtractionOK - Determine if can compute x-y without overflow
  *   Example: subtractionOK(0x80000000,0x80000000) = 1,
@@ -1025,6 +1099,7 @@ int subtractionOK(int x, int y)
 {
     return 2;
 }
+
 /*
  * thirdBits - return word with every third bit (starting from the LSB) set to 1
  *   Legal ops: ! ~ & ^ | + << >>
@@ -1035,6 +1110,7 @@ int thirdBits(void)
 {
     return 2;
 }
+
 /*
  * TMax - return maximum two's complement integer
  *   Legal ops: ! ~ & ^ | + << >>
@@ -1045,6 +1121,7 @@ int tmax(void)
 {
     return 2;
 }
+
 /*
  * tmin - return minimum two's complement integer
  *   Legal ops: ! ~ & ^ | + << >>
@@ -1055,6 +1132,7 @@ int tmin(void)
 {
     return 2;
 }
+
 /*
  * trueFiveEighths - multiplies by 5/8 rounding toward 0,
  *  avoiding errors due to overflow
@@ -1069,6 +1147,7 @@ int trueFiveEighths(int x)
 {
     return 2;
 }
+
 /*
  * trueThreeFourths - multiplies by 3/4 rounding toward 0,
  *   avoiding errors due to overflow
@@ -1083,6 +1162,7 @@ int trueThreeFourths(int x)
 {
     return 2;
 }
+
 /*
  * twosComp2SignMag - Convert from two's complement to sign-magnitude
  *   where the MSB is the sign bit
@@ -1096,6 +1176,7 @@ int twosComp2SignMag(int x)
 {
     return 2;
 }
+
 /*
  * upperBits - pads n upper bits with 1's
  *  You may assume 0 <= n <= 32

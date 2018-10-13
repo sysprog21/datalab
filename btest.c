@@ -27,9 +27,9 @@
 /* Not declared in some stdlib.h files, so define here */
 float strtof(const char *nptr, char **endptr);
 
-/*************************
+/**
  * Configuration Constants
- *************************/
+ */
 
 /* Handle infinite loops by setting upper limit on execution time, in
    seconds */
@@ -47,16 +47,17 @@ float strtof(const char *nptr, char **endptr);
    TEST_RANGE, thus MAX_TEST_VALS must be at least k*TEST_RANGE */
 #define MAX_TEST_VALS 13 * TEST_RANGE
 
-/**********************************
+/**
  * Globals defined in other modules
- **********************************/
+ */
+
 /* This characterizes the set of puzzles to test.
    Defined in decl.c and generated from templates in ./puzzles dir */
 extern test_rec test_set[];
 
-/************************************************
+/**
  * Write-once globals defined by command line args
- ************************************************/
+ */
 
 /* Emit results in a format for autograding, without showing
    and counter-examples */
@@ -75,9 +76,9 @@ static unsigned argval[3] = {0, 0, 0};
 /* Use fixed weight for rating, and if so, what should it  be? (-r) */
 static int global_rating = 0;
 
-/******************
+/**
  * Helper functions
- ******************/
+ */
 
 /*
  * Signal - installs a signal handler
@@ -512,7 +513,6 @@ static int get_num_val(char *sval, unsigned *valp)
     }
 }
 
-
 /*
  * usage - Display usage info
  */
@@ -533,11 +533,9 @@ static void usage(char *cmd)
     exit(1);
 }
 
-
-/**************
+/**
  * Main routine
- **************/
-
+ */
 int main(int argc, char *argv[])
 {
     char c;

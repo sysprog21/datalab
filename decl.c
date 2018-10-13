@@ -17,6 +17,7 @@ test_rec test_set[] = {
      10,
      4,
      {{-TMax, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"addOK",
      (funct_t) addOK,
      (funct_t) test_addOK,
@@ -25,6 +26,7 @@ test_rec test_set[] = {
      20,
      3,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"allEvenBits",
      (funct_t) allEvenBits,
      (funct_t) test_allEvenBits,
@@ -33,6 +35,7 @@ test_rec test_set[] = {
      12,
      2,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"allOddBits",
      (funct_t) allOddBits,
      (funct_t) test_allOddBits,
@@ -41,6 +44,7 @@ test_rec test_set[] = {
      12,
      2,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"anyEvenBit",
      (funct_t) anyEvenBit,
      (funct_t) test_anyEvenBit,
@@ -49,6 +53,7 @@ test_rec test_set[] = {
      12,
      2,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"anyOddBit",
      (funct_t) anyOddBit,
      (funct_t) test_anyOddBit,
@@ -57,6 +62,7 @@ test_rec test_set[] = {
      12,
      2,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"bang",
      (funct_t) bang,
      (funct_t) test_bang,
@@ -65,6 +71,7 @@ test_rec test_set[] = {
      12,
      4,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"bitAnd",
      (funct_t) bitAnd,
      (funct_t) test_bitAnd,
@@ -73,6 +80,7 @@ test_rec test_set[] = {
      8,
      1,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"bitCount",
      (funct_t) bitCount,
      (funct_t) test_bitCount,
@@ -81,6 +89,7 @@ test_rec test_set[] = {
      40,
      4,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"bitMask",
      (funct_t) bitMask,
      (funct_t) test_bitMask,
@@ -89,6 +98,7 @@ test_rec test_set[] = {
      16,
      3,
      {{0, 31}, {0, 31}, {TMin, TMax}}},
+
     {"bitMatch",
      (funct_t) bitMatch,
      (funct_t) test_bitMatch,
@@ -97,6 +107,7 @@ test_rec test_set[] = {
      14,
      1,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"bitNor",
      (funct_t) bitNor,
      (funct_t) test_bitNor,
@@ -105,6 +116,7 @@ test_rec test_set[] = {
      8,
      1,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"bitOr",
      (funct_t) bitOr,
      (funct_t) test_bitOr,
@@ -113,6 +125,7 @@ test_rec test_set[] = {
      8,
      1,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"bitParity",
      (funct_t) bitParity,
      (funct_t) test_bitParity,
@@ -121,6 +134,7 @@ test_rec test_set[] = {
      20,
      4,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"bitReverse",
      (funct_t) bitReverse,
      (funct_t) test_bitReverse,
@@ -129,6 +143,7 @@ test_rec test_set[] = {
      45,
      4,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"bitXor",
      (funct_t) bitXor,
      (funct_t) test_bitXor,
@@ -137,6 +152,7 @@ test_rec test_set[] = {
      14,
      1,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"byteSwap",
      (funct_t) byteSwap,
      (funct_t) test_byteSwap,
@@ -145,6 +161,7 @@ test_rec test_set[] = {
      25,
      2,
      {{TMin, TMax}, {0, 3}, {0, 3}}},
+
     {"conditional",
      (funct_t) conditional,
      (funct_t) test_conditional,
@@ -153,6 +170,7 @@ test_rec test_set[] = {
      16,
      3,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"copyLSB",
      (funct_t) copyLSB,
      (funct_t) test_copyLSB,
@@ -161,6 +179,7 @@ test_rec test_set[] = {
      5,
      2,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"distinctNegation",
      (funct_t) distinctNegation,
      (funct_t) test_distinctNegation,
@@ -169,6 +188,7 @@ test_rec test_set[] = {
      5,
      2,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"dividePower2",
      (funct_t) dividePower2,
      (funct_t) test_dividePower2,
@@ -177,6 +197,7 @@ test_rec test_set[] = {
      15,
      2,
      {{TMin, TMax}, {0, 30}, {TMin, TMax}}},
+
     {"evenBits",
      (funct_t) evenBits,
      (funct_t) test_evenBits,
@@ -185,6 +206,7 @@ test_rec test_set[] = {
      8,
      1,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"ezThreeFourths",
      (funct_t) ezThreeFourths,
      (funct_t) test_ezThreeFourths,
@@ -193,6 +215,7 @@ test_rec test_set[] = {
      12,
      3,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"fitsBits",
      (funct_t) fitsBits,
      (funct_t) test_fitsBits,
@@ -201,6 +224,7 @@ test_rec test_set[] = {
      15,
      2,
      {{TMin, TMax}, {1, 32}, {TMin, TMax}}},
+
     {"fitsShort",
      (funct_t) fitsShort,
      (funct_t) test_fitsShort,
@@ -209,6 +233,7 @@ test_rec test_set[] = {
      8,
      1,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"floatAbsVal",
      (funct_t) floatAbsVal,
      (funct_t) test_floatAbsVal,
@@ -217,6 +242,7 @@ test_rec test_set[] = {
      10,
      2,
      {{1, 1}, {1, 1}, {1, 1}}},
+
     {"floatFloat2Int",
      (funct_t) floatFloat2Int,
      (funct_t) test_floatFloat2Int,
@@ -225,6 +251,7 @@ test_rec test_set[] = {
      30,
      4,
      {{1, 1}, {1, 1}, {1, 1}}},
+
     {"floatInt2Float",
      (funct_t) floatInt2Float,
      (funct_t) test_floatInt2Float,
@@ -233,6 +260,7 @@ test_rec test_set[] = {
      30,
      4,
      {{1, 1}, {1, 1}, {1, 1}}},
+
     {"floatIsEqual",
      (funct_t) floatIsEqual,
      (funct_t) test_floatIsEqual,
@@ -241,6 +269,7 @@ test_rec test_set[] = {
      25,
      2,
      {{1, 1}, {1, 1}, {1, 1}}},
+
     {"floatIsLess",
      (funct_t) floatIsLess,
      (funct_t) test_floatIsLess,
@@ -249,6 +278,7 @@ test_rec test_set[] = {
      30,
      3,
      {{1, 1}, {1, 1}, {1, 1}}},
+
     {"floatNegate",
      (funct_t) floatNegate,
      (funct_t) test_floatNegate,
@@ -257,6 +287,7 @@ test_rec test_set[] = {
      10,
      2,
      {{1, 1}, {1, 1}, {1, 1}}},
+
     {"floatPower2",
      (funct_t) floatPower2,
      (funct_t) test_floatPower2,
@@ -265,6 +296,7 @@ test_rec test_set[] = {
      30,
      4,
      {{1, 1}, {1, 1}, {1, 1}}},
+
     {"floatScale1d2",
      (funct_t) floatScale1d2,
      (funct_t) test_floatScale1d2,
@@ -273,6 +305,7 @@ test_rec test_set[] = {
      30,
      4,
      {{1, 1}, {1, 1}, {1, 1}}},
+
     {"floatScale2",
      (funct_t) floatScale2,
      (funct_t) test_floatScale2,
@@ -281,6 +314,7 @@ test_rec test_set[] = {
      30,
      4,
      {{1, 1}, {1, 1}, {1, 1}}},
+
     {"floatScale64",
      (funct_t) floatScale64,
      (funct_t) test_floatScale64,
@@ -289,6 +323,7 @@ test_rec test_set[] = {
      35,
      4,
      {{1, 1}, {1, 1}, {1, 1}}},
+
     {"floatUnsigned2Float",
      (funct_t) floatUnsigned2Float,
      (funct_t) test_floatUnsigned2Float,
@@ -297,6 +332,7 @@ test_rec test_set[] = {
      30,
      4,
      {{1, 1}, {1, 1}, {1, 1}}},
+
     {"getByte",
      (funct_t) getByte,
      (funct_t) test_getByte,
@@ -305,6 +341,7 @@ test_rec test_set[] = {
      6,
      2,
      {{TMin, TMax}, {0, 3}, {TMin, TMax}}},
+
     {"greatestBitPos",
      (funct_t) greatestBitPos,
      (funct_t) test_greatestBitPos,
@@ -313,6 +350,7 @@ test_rec test_set[] = {
      70,
      4,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"howManyBits",
      (funct_t) howManyBits,
      (funct_t) test_howManyBits,
@@ -321,6 +359,7 @@ test_rec test_set[] = {
      90,
      4,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"implication",
      (funct_t) implication,
      (funct_t) test_implication,
@@ -329,6 +368,7 @@ test_rec test_set[] = {
      5,
      2,
      {{0, 1}, {0, 1}, {TMin, TMax}}},
+
     {"intLog2",
      (funct_t) intLog2,
      (funct_t) test_intLog2,
@@ -337,6 +377,7 @@ test_rec test_set[] = {
      90,
      4,
      {{1, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"isAsciiDigit",
      (funct_t) isAsciiDigit,
      (funct_t) test_isAsciiDigit,
@@ -345,6 +386,7 @@ test_rec test_set[] = {
      15,
      3,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"isEqual",
      (funct_t) isEqual,
      (funct_t) test_isEqual,
@@ -353,6 +395,7 @@ test_rec test_set[] = {
      5,
      2,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"isGreater",
      (funct_t) isGreater,
      (funct_t) test_isGreater,
@@ -361,6 +404,7 @@ test_rec test_set[] = {
      24,
      3,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"isLess",
      (funct_t) isLess,
      (funct_t) test_isLess,
@@ -369,6 +413,7 @@ test_rec test_set[] = {
      24,
      3,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"isLessOrEqual",
      (funct_t) isLessOrEqual,
      (funct_t) test_isLessOrEqual,
@@ -377,6 +422,7 @@ test_rec test_set[] = {
      24,
      3,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"isNegative",
      (funct_t) isNegative,
      (funct_t) test_isNegative,
@@ -385,6 +431,7 @@ test_rec test_set[] = {
      6,
      2,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"isNonNegative",
      (funct_t) isNonNegative,
      (funct_t) test_isNonNegative,
@@ -393,6 +440,7 @@ test_rec test_set[] = {
      6,
      2,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"isNonZero",
      (funct_t) isNonZero,
      (funct_t) test_isNonZero,
@@ -401,6 +449,7 @@ test_rec test_set[] = {
      10,
      4,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"isNotEqual",
      (funct_t) isNotEqual,
      (funct_t) test_isNotEqual,
@@ -409,6 +458,7 @@ test_rec test_set[] = {
      6,
      2,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"isPallindrome",
      (funct_t) isPallindrome,
      (funct_t) test_isPallindrome,
@@ -417,6 +467,7 @@ test_rec test_set[] = {
      40,
      4,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"isPositive",
      (funct_t) isPositive,
      (funct_t) test_isPositive,
@@ -425,6 +476,7 @@ test_rec test_set[] = {
      8,
      2,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"isPower2",
      (funct_t) isPower2,
      (funct_t) test_isPower2,
@@ -433,6 +485,7 @@ test_rec test_set[] = {
      20,
      4,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"isTmax",
      (funct_t) isTmax,
      (funct_t) test_isTmax,
@@ -441,6 +494,7 @@ test_rec test_set[] = {
      10,
      1,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"isTmin",
      (funct_t) isTmin,
      (funct_t) test_isTmin,
@@ -449,6 +503,7 @@ test_rec test_set[] = {
      10,
      1,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"isZero",
      (funct_t) isZero,
      (funct_t) test_isZero,
@@ -457,6 +512,7 @@ test_rec test_set[] = {
      2,
      1,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"leastBitPos",
      (funct_t) leastBitPos,
      (funct_t) test_leastBitPos,
@@ -465,6 +521,7 @@ test_rec test_set[] = {
      6,
      2,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"leftBitCount",
      (funct_t) leftBitCount,
      (funct_t) test_leftBitCount,
@@ -473,6 +530,7 @@ test_rec test_set[] = {
      40,
      4,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"logicalNeg",
      (funct_t) logicalNeg,
      (funct_t) test_logicalNeg,
@@ -481,6 +539,7 @@ test_rec test_set[] = {
      12,
      4,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"logicalShift",
      (funct_t) logicalShift,
      (funct_t) test_logicalShift,
@@ -489,6 +548,7 @@ test_rec test_set[] = {
      20,
      3,
      {{TMin, TMax}, {0, 31}, {TMin, TMax}}},
+
     {"minusOne",
      (funct_t) minusOne,
      (funct_t) test_minusOne,
@@ -497,6 +557,7 @@ test_rec test_set[] = {
      2,
      1,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"multFiveEighths",
      (funct_t) multFiveEighths,
      (funct_t) test_multFiveEighths,
@@ -505,6 +566,7 @@ test_rec test_set[] = {
      12,
      3,
      {{-(1 << 28) - 1, (1 << 28) - 1}, {TMin, TMax}, {TMin, TMax}}},
+
     {"negate",
      (funct_t) negate,
      (funct_t) test_negate,
@@ -513,6 +575,7 @@ test_rec test_set[] = {
      5,
      2,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"oddBits",
      (funct_t) oddBits,
      (funct_t) test_oddBits,
@@ -521,6 +584,7 @@ test_rec test_set[] = {
      8,
      2,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"remainderPower2",
      (funct_t) remainderPower2,
      (funct_t) test_remainderPower2,
@@ -529,6 +593,7 @@ test_rec test_set[] = {
      20,
      3,
      {{TMin, TMax}, {0, 30}, {TMin, TMax}}},
+
     {"replaceByte",
      (funct_t) replaceByte,
      (funct_t) test_replaceByte,
@@ -537,6 +602,7 @@ test_rec test_set[] = {
      10,
      3,
      {{TMin, TMax}, {0, 3}, {0, 255}}},
+
     {"rotateLeft",
      (funct_t) rotateLeft,
      (funct_t) test_rotateLeft,
@@ -545,6 +611,7 @@ test_rec test_set[] = {
      25,
      3,
      {{TMin, TMax}, {0, 31}, {TMin, TMax}}},
+
     {"rotateRight",
      (funct_t) rotateRight,
      (funct_t) test_rotateRight,
@@ -553,6 +620,7 @@ test_rec test_set[] = {
      25,
      3,
      {{TMin, TMax}, {0, 31}, {TMin, TMax}}},
+
     {"satAdd",
      (funct_t) satAdd,
      (funct_t) test_satAdd,
@@ -561,6 +629,7 @@ test_rec test_set[] = {
      30,
      4,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"satMul2",
      (funct_t) satMul2,
      (funct_t) test_satMul2,
@@ -569,6 +638,7 @@ test_rec test_set[] = {
      20,
      3,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"satMul3",
      (funct_t) satMul3,
      (funct_t) test_satMul3,
@@ -577,6 +647,7 @@ test_rec test_set[] = {
      25,
      3,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"sign",
      (funct_t) sign,
      (funct_t) test_sign,
@@ -585,6 +656,7 @@ test_rec test_set[] = {
      10,
      2,
      {{-TMax, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"signMag2TwosComp",
      (funct_t) signMag2TwosComp,
      (funct_t) test_signMag2TwosComp,
@@ -593,6 +665,7 @@ test_rec test_set[] = {
      15,
      4,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"specialBits",
      (funct_t) specialBits,
      (funct_t) test_specialBits,
@@ -601,6 +674,7 @@ test_rec test_set[] = {
      3,
      1,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"subtractionOK",
      (funct_t) subtractionOK,
      (funct_t) test_subtractionOK,
@@ -609,6 +683,7 @@ test_rec test_set[] = {
      20,
      3,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"thirdBits",
      (funct_t) thirdBits,
      (funct_t) test_thirdBits,
@@ -617,6 +692,7 @@ test_rec test_set[] = {
      8,
      1,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"tmax",
      (funct_t) tmax,
      (funct_t) test_tmax,
@@ -625,6 +701,7 @@ test_rec test_set[] = {
      4,
      1,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"tmin",
      (funct_t) tmin,
      (funct_t) test_tmin,
@@ -633,6 +710,7 @@ test_rec test_set[] = {
      4,
      1,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"trueFiveEighths",
      (funct_t) trueFiveEighths,
      (funct_t) test_trueFiveEighths,
@@ -641,6 +719,7 @@ test_rec test_set[] = {
      25,
      4,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"trueThreeFourths",
      (funct_t) trueThreeFourths,
      (funct_t) test_trueThreeFourths,
@@ -649,6 +728,7 @@ test_rec test_set[] = {
      20,
      4,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"twosComp2SignMag",
      (funct_t) twosComp2SignMag,
      (funct_t) test_twosComp2SignMag,
@@ -657,6 +737,7 @@ test_rec test_set[] = {
      15,
      4,
      {{TMin + 1, TMax}, {TMin + 1, TMax}, {TMin + 1, TMax}}},
+
     {"upperBits",
      (funct_t) upperBits,
      (funct_t) test_upperBits,
@@ -665,4 +746,5 @@ test_rec test_set[] = {
      10,
      1,
      {{0, 32}, {TMin, TMax}, {TMin, TMax}}},
+
     {"", NULL, NULL, 0, "", 0, 0, {{0, 0}, {0, 0}, {0, 0}}}};
