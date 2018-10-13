@@ -11,7 +11,7 @@
  * around zero and tmin and tmax for integer puzzles, and zero, norm,
  * and denorm boundaries for floating point puzzles.
  *
- * Note: not 64-bit safe. Always compile with gcc -m32 option.
+ * FIXME: not 64-bit safe. Always compile with gcc -m32 option.
  */
 
 #include <stdio.h>
