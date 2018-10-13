@@ -22,6 +22,7 @@
 #include <signal.h>
 #include <setjmp.h>
 #include <math.h>
+#include <time.h>
 #include "btest.h"
 
 /* Not declared in some stdlib.h files, so define here */
@@ -539,6 +540,8 @@ static void usage(char *cmd)
 int main(int argc, char *argv[])
 {
     char c;
+
+    srand(time(NULL));
 
     /* parse command line args */
     while ((c = getopt(argc, argv, "hgf:r:T:1:2:3:")) != -1)
