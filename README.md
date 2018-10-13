@@ -32,13 +32,9 @@ $ make btest
 $ ./btest [optional cmd line args]
 ```
 
-You will need to recompile btest each time you change your bits.c
-program. When moving from one platform to another, you will want to
-get rid of the old version of btest and generate a new one.  Use the
-commands:
+Alternatively, you can use the command to launch btest program, type:
 ```shell
-$ make clean
-$ make btest
+$ make check
 ```
 
 Btest tests your code for correctness by running millions of test
