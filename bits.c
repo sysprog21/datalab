@@ -903,6 +903,17 @@ int logicalShift(int x, int n)
 }
 
 /*
+ * maximumOfTwo - compute the maximum of two integers without branching
+ *   Legal ops: ! ~ & ^ | + << >>
+ *   Max ops: 20
+ *   Rating: 4
+ */
+int maximumOfTwo(int x, int y)
+{
+    return 42;
+}
+
+/*
  * minimumOfTwo - compute the minimum of two integers without branching
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 20
