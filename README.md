@@ -3,22 +3,23 @@
 Your goal is to modify your copy of bits.c so that it passes all the
 tests in btest without violating any of the coding guidelines.
 
-Copyright (c) 2001-2011, R. Bryant and D. O'Hallaron, All rights reserved.
-Modified by National Cheng Kung University, Taiwan.
+## Copyright information
 
-## Files:
+- Copyright (c) 2001-2011, R. Bryant and D. O'Hallaron, All rights reserved.
+- Modified by National Cheng Kung University, Taiwan, in 2018.
 
-* Makefile	- Makes btest, fshow, and ishow
-* README		- This file
-* bits.c		- The file you will be modifying and handing in
-* bits.h		- Header file
-* btest.c		- The main btest program
-    * btest.h	- Used to build btest
-    * decl.c	- Used to build btest
-    * tests.c       - Used to build btest
-    * tests-header.c- Used to build btest
-* fshow.c		- Utility for examining floating-point representations
-* ishow.c		- Utility for examining integer representations
+## Files
+
+* Makefile	: Makes btest, fshow, and ishow
+* README.md	: This file
+* bits.c	: The file you will be modifying and handing in
+* bits.h	: Header file
+* btest.c	: The main btest program
+    * btest.h	: Used to build btest
+    * decl.c	: Used to build btest
+    * tests.c   : Used to build btest
+* fshow.c	: Utility for examining floating-point representations
+* ishow.c	: Utility for examining integer representations
 
 ## Testing with btest
 
@@ -29,7 +30,7 @@ To compile and run the btest program, type:
 ```shell
 $ make btest
 $ ./btest [optional cmd line args]
-``
+```
 
 You will need to recompile btest each time you change your bits.c
 program. When moving from one platform to another, you will want to
@@ -98,7 +99,7 @@ $ make
 ```
 
 Example usages:
-    ```shell
+
     $ ./ishow 0x27
     Hex = 0x00000027,	Signed = 39,	Unsigned = 39
 
@@ -110,8 +111,7 @@ Example usages:
     Bit Representation 0x15213243, sign = 0, exponent = 0x2a, fraction = 0x213243
     Normalized.  +1.2593463659 X 2^(-85)
 
-    linux> ./fshow 15213243
+    $ ./fshow 15213243
     Floating point value 2.131829405e-38
     Bit Representation 0x00e822bb, sign = 0, exponent = 0x01, fraction = 0x6822bb
     Normalized.  +1.8135598898 X 2^(-126)
-    ```
