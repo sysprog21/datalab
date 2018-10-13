@@ -118,6 +118,8 @@ int logicalNeg(int);
 int test_logicalNeg(int);
 int logicalShift(int, int);
 int test_logicalShift(int, int);
+int minimumOfTwo(int, int);
+int test_minimumOfTwo(int, int);
 int minusOne();
 int test_minusOne();
 int multFiveEighths(int);

@@ -539,6 +539,11 @@ int test_logicalShift(int x, int n)
     return (int) shifted;
 }
 
+int test_minimumOfTwo(int x, int y)
+{
+    return (x < y) ? x : y;
+}
+
 int test_minusOne(void)
 {
     return -1;

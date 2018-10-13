@@ -549,6 +549,15 @@ test_rec test_set[] = {
      3,
      {{TMin, TMax}, {0, 31}, {TMin, TMax}}},
 
+    {"minimumOfTwo",
+     (funct_t) minimumOfTwo,
+     (funct_t) test_minimumOfTwo,
+     2,
+     "! ~ & ^ | + << >>",
+     20,
+     4,
+     {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"minusOne",
      (funct_t) minusOne,
      (funct_t) test_minusOne,

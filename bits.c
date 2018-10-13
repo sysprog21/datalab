@@ -903,6 +903,17 @@ int logicalShift(int x, int n)
 }
 
 /*
+ * minimumOfTwo - compute the minimum of two integers without branching
+ *   Legal ops: ! ~ & ^ | + << >>
+ *   Max ops: 20
+ *   Rating: 4
+ */
+int minimumOfTwo(int x, int y)
+{
+    return 42;
+}
+
+/*
  * minusOne - return a value of -1
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 2
