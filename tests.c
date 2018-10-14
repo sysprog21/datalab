@@ -201,30 +201,31 @@ int test_conditional(int x, int y, int z)
     return x ? y : z;
 }
 
-int test_countLeadingZero(unsigned x)
+int test_countLeadingZero(int x)
 {
     if (x == 0)
         return 32;
+    unsigned int y = x;
     int n = 0;
-    if (x <= 0x0000FFFF) {
+    if (y <= 0x0000FFFF) {
         n += 16;
-        x <<= 16;
+        y <<= 16;
     }
-    if (x <= 0x00FFFFFF) {
+    if (y <= 0x00FFFFFF) {
         n += 8;
-        x <<= 8;
+        y <<= 8;
     }
-    if (x <= 0x0FFFFFFF) {
+    if (y <= 0x0FFFFFFF) {
         n += 4;
-        x <<= 4;
+        y <<= 4;
     }
-    if (x <= 0x3FFFFFFF) {
+    if (y <= 0x3FFFFFFF) {
         n += 2;
-        x <<= 2;
+        y <<= 2;
     }
-    if (x <= 0x7FFFFFFF) {
+    if (y <= 0x7FFFFFFF) {
         n += 1;
-        x <<= 1;
+        y <<= 1;
     }
     return n;
 }

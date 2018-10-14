@@ -339,7 +339,7 @@ int conditional(int x, int y, int z)
  *   Max ops: 50
  *   Rating: 4
  */
-int countLeadingZero(unsigned x)
+int countLeadingZero(int x)
 {
     return 42;
 }
