@@ -116,8 +116,8 @@ int absVal(int x)
 
 /*
  * addOK - Determine if can compute x+y without overflow
- *   Example: addOK(0x80000000,0x80000000) = 0,
- *            addOK(0x80000000,0x70000000) = 1,
+ *   Example: addOK(0x80000000, 0x80000000) = 0,
+ *            addOK(0x80000000, 0x70000000) = 1,
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 20
  *   Rating: 3
@@ -218,7 +218,7 @@ int bitCount(int x)
 /*
  * bitMask - Generate a mask consisting of all 1's
  *   lowbit and highbit
- *   Examples: bitMask(5,3) = 0x38
+ *   Examples: bitMask(5, 3) = 0x38
  *   Assume 0 <= lowbit <= 31, and 0 <= highbit <= 31
  *   If lowbit > highbit, then mask should be all 0's
  *   Legal ops: ! ~ & ^ | + << >>
@@ -370,8 +370,8 @@ int distinctNegation(int x)
 
 /*
  * dividePower2 - Compute x/(2^n), for 0 <= n <= 30
- *  Round toward zero
- *   Examples: dividePower2(15,1) = 7, dividePower2(-33,4) = -2
+ *                Round toward zero
+ *   Examples: dividePower2(15, 1) = 7, dividePower2(-33, 4) = -2
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 15
  *   Rating: 2
@@ -394,8 +394,8 @@ int evenBits(void)
 
 /*
  * ezThreeFourths - multiplies by 3/4 rounding toward 0,
- *   Should exactly duplicate effect of C expression (x*3/4),
- *   including overflow behavior.
+ *                  Should exactly duplicate effect of C expression (x*3/4),
+ *                  including overflow behavior.
  *   Examples: ezThreeFourths(11) = 8
  *             ezThreeFourths(-9) = -6
  *             ezThreeFourths(1073741824) = -268435456 (overflow)
@@ -409,9 +409,9 @@ int ezThreeFourths(int x)
 }
 
 /*
- * fitsBits - return 1 if x can be represented as an
- *  n-bit, two's complement integer.
- *   1 <= n <= 32
+ * fitsBits - return 1 if x can be represented as an n-bit, two's complement
+ *            integer.
+ *            1 <= n <= 32
  *   Examples: fitsBits(5,3) = 0, fitsBits(-4,3) = 1
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 15
@@ -423,8 +423,8 @@ int fitsBits(int x, int n)
 }
 
 /*
- * fitsShort - return 1 if x can be represented as a
- *   16-bit, two's complement integer.
+ * fitsShort - return 1 if x can be represented as a 16-bit, two's complement
+ *             integer.
  *   Examples: fitsShort(33000) = 0, fitsShort(-32768) = 1
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 8
@@ -437,11 +437,11 @@ int fitsShort(int x)
 
 /*
  * floatAbsVal - Return bit-level equivalent of absolute value of f for
- *   floating point argument f.
- *   Both the argument and result are passed as unsigned int's, but
- *   they are to be interpreted as the bit-level representations of
- *   single-precision floating point values.
- *   When argument is NaN, return argument..
+ *               floating point argument f.
+ *               Both the argument and result are passed as unsigned int's,
+ *               but they are to be interpreted as the bit-level
+ *               representations of single-precision floating point values.
+ *               When argument is NaN, return argument..
  *   Legal ops: Any integer/unsigned operations incl. ||, &&. also if, while
  *   Max ops: 10
  *   Rating: 2
@@ -453,12 +453,12 @@ unsigned floatAbsVal(unsigned uf)
 
 /*
  * floatFloat2Int - Return bit-level equivalent of expression (int) f
- *   for floating point argument f.
- *   Argument is passed as unsigned int, but
- *   it is to be interpreted as the bit-level representation of a
- *   single-precision floating point value.
- *   Anything out of range (including NaN and infinity) should return
- *   0x80000000u.
+ *                  for floating point argument f.
+ *                  Argument is passed as unsigned int, but it is to be
+ *                  interpreted as the bit-level representation of a
+ *                  single-precision floating point value.
+ *                  Anything out of range (including NaN and infinity) should
+ *                  return 0x80000000u.
  *   Legal ops: Any integer/unsigned operations incl. ||, &&. also if, while
  *   Max ops: 30
  *   Rating: 4
@@ -470,9 +470,9 @@ int floatFloat2Int(unsigned uf)
 
 /*
  * floatInt2Float - Return bit-level equivalent of expression (float) x
- *   Result is returned as unsigned int, but
- *   it is to be interpreted as the bit-level representation of a
- *   single-precision floating point values.
+ *                  Result is returned as unsigned int, but it is to be
+ *                  interpreted as the bit-level representation of a
+ *                  single-precision floating point values.
  *   Legal ops: Any integer/unsigned operations incl. ||, &&. also if, while
  *   Max ops: 30
  *   Rating: 4
@@ -484,11 +484,11 @@ unsigned floatInt2Float(int x)
 
 /*
  * floatIsEqual - Compute f == g for floating point arguments f and g.
- *   Both the arguments are passed as unsigned int's, but
- *   they are to be interpreted as the bit-level representations of
- *   single-precision floating point values.
- *   If either argument is NaN, return 0.
- *   +0 and -0 are considered equal.
+ *                Both the arguments are passed as unsigned int's, but
+ *                they are to be interpreted as the bit-level representations
+ *                of single-precision floating point values.
+ *                If either argument is NaN, return 0.
+ *                +0 and -0 are considered equal.
  *   Legal ops: Any integer/unsigned operations incl. ||, &&. also if, while
  *   Max ops: 25
  *   Rating: 2
@@ -500,11 +500,11 @@ int floatIsEqual(unsigned uf, unsigned ug)
 
 /*
  * floatIsLess - Compute f < g for floating point arguments f and g.
- *   Both the arguments are passed as unsigned int's, but
- *   they are to be interpreted as the bit-level representations of
- *   single-precision floating point values.
- *   If either argument is NaN, return 0.
- *   +0 and -0 are considered equal.
+ *               Both the arguments are passed as unsigned int's, but
+ *               they are to be interpreted as the bit-level representations
+ *               of single-precision floating point values.
+ *               If either argument is NaN, return 0.
+ *               +0 and -0 are considered equal.
  *   Legal ops: Any integer/unsigned operations incl. ||, &&. also if, while
  *   Max ops: 30
  *   Rating: 3
@@ -516,11 +516,11 @@ int floatIsLess(unsigned uf, unsigned ug)
 
 /*
  * floatNegate - Return bit-level equivalent of expression -f for
- *   floating point argument f.
- *   Both the argument and result are passed as unsigned int's, but
- *   they are to be interpreted as the bit-level representations of
- *   single-precision floating point values.
- *   When argument is NaN, return argument.
+ *               floating point argument f.
+ *               Both the argument and result are passed as unsigned int's,
+ *               but they are to be interpreted as the bit-level
+ *               representations of single-precision floating point values.
+ *               When argument is NaN, return argument.
  *   Legal ops: Any integer/unsigned operations incl. ||, &&. also if, while
  *   Max ops: 10
  *   Rating: 2
@@ -532,12 +532,13 @@ unsigned floatNegate(unsigned uf)
 
 /*
  * floatPower2 - Return bit-level equivalent of the expression 2.0^x
- *   (2.0 raised to the power x) for any 32-bit integer x.
+ *               (2.0 raised to the power x) for any 32-bit integer x.
  *
- *   The unsigned value that is returned should have the identical bit
- *   representation as the single-precision floating-point number 2.0^x.
- *   If the result is too small to be represented as a denorm, return
- *   0. If too large, return +INF.
+ *               The unsigned value that is returned should have the
+ *               identical bit representation as the single-precision
+ *               floating-point number 2.0^x.
+ *               If the result is too small to be represented as a denorm,
+ *               return 0. If too large, return +INF.
  *
  *   Legal ops: Any integer/unsigned operations incl. ||, &&. Also if, while
  *   Max ops: 30
@@ -550,11 +551,11 @@ unsigned floatPower2(int x)
 
 /*
  * floatScale1d2 - Return bit-level equivalent of expression 0.5*f for
- *   floating point argument f.
- *   Both the argument and result are passed as unsigned int's, but
- *   they are to be interpreted as the bit-level representation of
- *   single-precision floating point values.
- *   When argument is NaN, return argument
+ *                 floating point argument f.
+ *                 Both the argument and result are passed as unsigned int's,
+ *                 but they are to be interpreted as the bit-level
+ *                 representation of single-precision floating point values.
+ *                 When argument is NaN, return argument
  *   Legal ops: Any integer/unsigned operations incl. ||, &&. also if, while
  *   Max ops: 30
  *   Rating: 4
@@ -566,11 +567,11 @@ unsigned floatScale1d2(unsigned uf)
 
 /*
  * floatScale2 - Return bit-level equivalent of expression 2*f for
- *   floating point argument f.
- *   Both the argument and result are passed as unsigned int's, but
- *   they are to be interpreted as the bit-level representation of
- *   single-precision floating point values.
- *   When argument is NaN, return argument
+ *               floating point argument f.
+ *               Both the argument and result are passed as unsigned int's,
+ *               but they are to be interpreted as the bit-level representation
+ *               of single-precision floating point values.
+ *               When argument is NaN, return argument
  *   Legal ops: Any integer/unsigned operations incl. ||, &&. also if, while
  *   Max ops: 30
  *   Rating: 4
@@ -582,11 +583,11 @@ unsigned floatScale2(unsigned uf)
 
 /*
  * floatScale64 - Return bit-level equivalent of expression 64*f for
- *   floating point argument f.
- *   Both the argument and result are passed as unsigned int's, but
- *   they are to be interpreted as the bit-level representation of
- *   single-precision floating point values.
- *   When argument is NaN, return argument
+ *                floating point argument f.
+ *                Both the argument and result are passed as unsigned int's,
+ *                but they are to be interpreted as the bit-level
+ *                representation of single-precision floating point values.
+ *                When argument is NaN, return argument
  *   Legal ops: Any integer/unsigned operations incl. ||, &&. also if, while
  *   Max ops: 35
  *   Rating: 4
@@ -598,9 +599,9 @@ unsigned floatScale64(unsigned uf)
 
 /*
  * floatUnsigned2Float - Return bit-level equivalent of expression (float) u
- *   Result is returned as unsigned int, but
- *   it is to be interpreted as the bit-level representation of a
- *   single-precision floating point values.
+ *                       Result is returned as unsigned int, but it is to be
+ *                       interpreted as the bit-level representation of a
+ *                       single-precision floating point values.
  *   Legal ops: Any integer/unsigned operations incl. ||, &&. also if, while
  *   Max ops: 30
  *   Rating: 4
@@ -612,7 +613,7 @@ unsigned floatUnsigned2Float(unsigned u)
 
 /*
  * getByte - Extract byte n from word x
- *   Bytes numbered from 0 (least significant) to 3 (most significant)
+ *           Bytes numbered from 0 (least significant) to 3 (most significant)
  *   Examples: getByte(0x12345678,1) = 0x56
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 6
@@ -625,7 +626,7 @@ int getByte(int x, int n)
 
 /*
  * greatestBitPos - return a mask that marks the position of the
- *               most significant 1 bit. If x == 0, return 0
+ *                  most significant 1 bit. If x == 0, return 0
  *   Example: greatestBitPos(96) = 0x40
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 70
@@ -637,7 +638,7 @@ int greatestBitPos(int x)
 }
 
 /* howManyBits - return the minimum number of bits required to represent x in
- *             two's complement
+ *               two's complement
  *  Examples: howManyBits(12) = 5
  *            howManyBits(298) = 10
  *            howManyBits(-5) = 4
@@ -654,10 +655,10 @@ int howManyBits(int x)
 }
 
 /*
- * implication - return x -> y in propositional logic - 0 for false, 1
- * for true
- *   Example: implication(1,1) = 1
- *            implication(1,0) = 0
+ * implication - return x -> y in propositional logic - 0 for false,
+ *               1 for true
+ *   Example: implication(1, 1) = 1
+ *            implication(1, 0) = 0
  *   Legal ops: ! ~ ^ |
  *   Max ops: 5
  *   Rating: 2
@@ -680,8 +681,8 @@ int intLog2(int x)
 }
 
 /*
- * isAsciiDigit - return 1 if 0x30 <= x <= 0x39 (ASCII codes for characters '0'
- * to '9')
+ * isAsciiDigit - return 1 if 0x30 <= x <= 0x39 (ASCII codes for characters
+ *                '0' to '9')
  *   Example: isAsciiDigit(0x35) = 1.
  *            isAsciiDigit(0x3a) = 0.
  *            isAsciiDigit(0x05) = 0.
@@ -879,7 +880,7 @@ int leastBitPos(int x)
 
 /*
  * leftBitCount - returns count of number of consective 1's in
- *     left-hand (most significant) end of word.
+ *                left-hand (most significant) end of word.
  *   Examples: leftBitCount(-1) = 32, leftBitCount(0xFFF0F0F0) = 12
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 50
@@ -905,7 +906,7 @@ int logicalNeg(int x)
 
 /*
  * logicalShift - shift x to the right by n, using a logical shift
- *   Can assume that 0 <= n <= 31
+ *                Can assume that 0 <= n <= 31
  *   Examples: logicalShift(0x87654321,4) = 0x08765432
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 20
@@ -951,8 +952,8 @@ int minusOne(void)
 
 /*
  * multFiveEighths - multiplies by 5/8 rounding toward 0.
- *   Should exactly duplicate effect of C expression (x*5/8),
- *   including overflow behavior.
+ *                   Should exactly duplicate effect of C expression (x*5/8),
+ *                   including overflow behavior.
  *   Examples: multFiveEighths(77) = 48
  *             multFiveEighths(-22) = -13
  *             multFiveEighths(1073741824) = 13421728 (overflow)
@@ -990,8 +991,8 @@ int oddBits(void)
 
 /*
  * remainderPower2 - Compute x%(2^n), for 0 <= n <= 30
- *   Negative arguments should yield negative remainders
- *   Examples: remainderPower2(15,2) = 3, remainderPower2(-35,3) = -3
+ *                   Negative arguments should yield negative remainders
+ *   Examples: remainderPower2(15, 2) = 3, remainderPower2(-35, 3) = -3
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 20
  *   Rating: 3
@@ -1003,8 +1004,8 @@ int remainderPower2(int x, int n)
 
 /*
  * replaceByte(x,n,c) - Replace byte n in x with c
- *   Bytes numbered from 0 (LSB) to 3 (MSB)
- *   Examples: replaceByte(0x12345678,1,0xab) = 0x1234ab78
+ *                      Bytes numbered from 0 (LSB) to 3 (MSB)
+ *   Examples: replaceByte(0x12345678, 1, 0xab) = 0x1234ab78
  *   You can assume 0 <= n <= 3 and 0 <= c <= 255
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 10
@@ -1017,8 +1018,8 @@ int replaceByte(int x, int n, int c)
 
 /*
  * rotateLeft - Rotate x to the left by n
- *   Can assume that 0 <= n <= 31
- *   Examples: rotateLeft(0x87654321,4) = 0x76543218
+ *              Can assume that 0 <= n <= 31
+ *   Examples: rotateLeft(0x87654321, 4) = 0x76543218
  *   Legal ops: ~ & ^ | + << >> !
  *   Max ops: 25
  *   Rating: 3
@@ -1030,8 +1031,8 @@ int rotateLeft(int x, int n)
 
 /*
  * rotateRight - Rotate x to the right by n
- *   Can assume that 0 <= n <= 31
- *   Examples: rotateRight(0x87654321,4) = 0x76543218
+ *               Can assume that 0 <= n <= 31
+ *   Examples: rotateRight(0x87654321, 4) = 0x76543218
  *   Legal ops: ~ & ^ | + << >> !
  *   Max ops: 25
  *   Rating: 3
@@ -1045,8 +1046,8 @@ int rotateRight(int x, int n)
  * satAdd - adds two numbers but when positive overflow occurs, returns
  *          maximum possible value, and when negative overflow occurs,
  *          it returns minimum positive value.
- *   Examples: satAdd(0x40000000,0x40000000) = 0x7fffffff
- *             satAdd(0x80000000,0xffffffff) = 0x80000000
+ *   Examples: satAdd(0x40000000, 0x40000000) = 0x7fffffff
+ *             satAdd(0x80000000, 0xffffffff) = 0x80000000
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 30
  *   Rating: 4
@@ -1072,14 +1073,14 @@ int satMul2(int x)
 
 /*
  * satMul3 - multiplies by 3, saturating to Tmin or Tmax if overflow
- *  Examples: satMul3(0x10000000) = 0x30000000
- *            satMul3(0x30000000) = 0x7FFFFFFF (Saturate to TMax)
- *            satMul3(0x70000000) = 0x7FFFFFFF (Saturate to TMax)
- *            satMul3(0xD0000000) = 0x80000000 (Saturate to TMin)
- *            satMul3(0xA0000000) = 0x80000000 (Saturate to TMin)
- *  Legal ops: ! ~ & ^ | + << >>
- *  Max ops: 25
- *  Rating: 3
+ *   Examples: satMul3(0x10000000) = 0x30000000
+ *             satMul3(0x30000000) = 0x7FFFFFFF (Saturate to TMax)
+ *             satMul3(0x70000000) = 0x7FFFFFFF (Saturate to TMax)
+ *              satMul3(0xD0000000) = 0x80000000 (Saturate to TMin)
+ *             satMul3(0xA0000000) = 0x80000000 (Saturate to TMin)
+ *   Legal ops: ! ~ & ^ | + << >>
+ *   Max ops: 25
+ *   Rating: 3
  */
 int satMul3(int x)
 {
@@ -1088,11 +1089,11 @@ int satMul3(int x)
 
 /*
  * sign - return 1 if positive, 0 if zero, and -1 if negative
- *  Examples: sign(130) = 1
- *            sign(-23) = -1
- *  Legal ops: ! ~ & ^ | + << >>
- *  Max ops: 10
- *  Rating: 2
+ *   Examples: sign(130) = 1
+ *             sign(-23) = -1
+ *   Legal ops: ! ~ & ^ | + << >>
+ *   Max ops: 10
+ *   Rating: 2
  */
 int sign(int x)
 {
@@ -1101,7 +1102,7 @@ int sign(int x)
 
 /*
  * signMag2TwosComp - Convert from sign-magnitude to two's complement
- *   where the MSB is the sign bit
+ *                    where the MSB is the sign bit
  *   Example: signMag2TwosComp(0x80000005) = -5.
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 15
@@ -1125,8 +1126,8 @@ int specialBits(void)
 
 /*
  * subtractionOK - Determine if can compute x-y without overflow
- *   Example: subtractionOK(0x80000000,0x80000000) = 1,
- *            subtractionOK(0x80000000,0x70000000) = 0,
+ *   Example: subtractionOK(0x80000000, 0x80000000) = 1,
+ *            subtractionOK(0x80000000, 0x70000000) = 0,
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 20
  *   Rating: 3
@@ -1137,7 +1138,8 @@ int subtractionOK(int x, int y)
 }
 
 /*
- * thirdBits - return word with every third bit (starting from the LSB) set to 1
+ * thirdBits - return word with every third bit (starting from the LSB)
+ *             set to 1
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 8
  *   Rating: 1
@@ -1171,13 +1173,13 @@ int tmin(void)
 
 /*
  * trueFiveEighths - multiplies by 5/8 rounding toward 0,
- *  avoiding errors due to overflow
- *  Examples: trueFiveEighths(11) = 6
- *            trueFiveEighths(-9) = -5
- *            trueFiveEighths(0x30000000) = 0x1E000000 (no overflow)
- *  Legal ops: ! ~ & ^ | + << >>
- *  Max ops: 25
- *  Rating: 4
+ *                   avoiding errors due to overflow
+ *   Examples: trueFiveEighths(11) = 6
+ *             trueFiveEighths(-9) = -5
+ *             trueFiveEighths(0x30000000) = 0x1E000000 (no overflow)
+ *   Legal ops: ! ~ & ^ | + << >>
+ *   Max ops: 25
+ *   Rating: 4
  */
 int trueFiveEighths(int x)
 {
@@ -1186,7 +1188,7 @@ int trueFiveEighths(int x)
 
 /*
  * trueThreeFourths - multiplies by 3/4 rounding toward 0,
- *   avoiding errors due to overflow
+ *                    avoiding errors due to overflow
  *   Examples: trueThreeFourths(11) = 8
  *             trueThreeFourths(-9) = -6
  *             trueThreeFourths(1073741824) = 805306368 (no overflow)
@@ -1201,8 +1203,8 @@ int trueThreeFourths(int x)
 
 /*
  * twosComp2SignMag - Convert from two's complement to sign-magnitude
- *   where the MSB is the sign bit
- *   You can assume that x > TMin
+ *                    where the MSB is the sign bit
+ *                    You can assume that x > TMin
  *   Example: twosComp2SignMag(-5) = 0x80000005.
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 15
@@ -1215,11 +1217,11 @@ int twosComp2SignMag(int x)
 
 /*
  * upperBits - pads n upper bits with 1's
- *  You may assume 0 <= n <= 32
- *  Example: upperBits(4) = 0xF0000000
- *  Legal ops: ! ~ & ^ | + << >>
- *  Max ops: 10
- *  Rating: 1
+ *             You may assume 0 <= n <= 32
+ *   Example: upperBits(4) = 0xF0000000
+ *   Legal ops: ! ~ & ^ | + << >>
+ *   Max ops: 10
+ *   Rating: 1
  */
 int upperBits(int n)
 {
