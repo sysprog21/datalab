@@ -227,7 +227,7 @@ static int gen_vals(int test_vals[], int min, int max, int test_range, int arg)
 /*
  * test_0_arg - Test a function with zero arguments
  */
-static int test_0_arg(funct_t f, funct_t ft, char *name)
+static int test_0_arg(func_t f, func_t ft, char *name)
 {
     int r = f();
     int rt = ft();
@@ -245,7 +245,7 @@ static int test_0_arg(funct_t f, funct_t ft, char *name)
 /*
  * test_1_arg - Test a function with one argument
  */
-static int test_1_arg(funct_t f, funct_t ft, int arg1, char *name)
+static int test_1_arg(func_t f, func_t ft, int arg1, char *name)
 {
     funct1_t f1 = (funct1_t) f;
     funct1_t f1t = (funct1_t) ft;
@@ -266,7 +266,7 @@ static int test_1_arg(funct_t f, funct_t ft, int arg1, char *name)
 /*
  * test_2_arg - Test a function with two arguments
  */
-static int test_2_arg(funct_t f, funct_t ft, int arg1, int arg2, char *name)
+static int test_2_arg(func_t f, func_t ft, int arg1, int arg2, char *name)
 {
     funct2_t f2 = (funct2_t) f;
     funct2_t f2t = (funct2_t) ft;
@@ -286,8 +286,8 @@ static int test_2_arg(funct_t f, funct_t ft, int arg1, int arg2, char *name)
 /*
  * test_3_arg - Test a function with three arguments
  */
-static int test_3_arg(funct_t f,
-                      funct_t ft,
+static int test_3_arg(func_t f,
+                      func_t ft,
                       int arg1,
                       int arg2,
                       int arg3,
