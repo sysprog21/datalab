@@ -34,6 +34,8 @@ int byteSwap(int, int, int);
 int test_byteSwap(int, int, int);
 int conditional(int, int, int);
 int test_conditional(int, int, int);
+int countLeadingZero(int);
+int test_countLeadingZero(int);
 int copyLSB(int);
 int test_copyLSB(int);
 int distinctNegation(int);

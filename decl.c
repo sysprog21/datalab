@@ -171,6 +171,15 @@ test_rec test_set[] = {
      3,
      {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
 
+    {"countLeadingZero",
+     (funct_t) countLeadingZero,
+     (funct_t) test_countLeadingZero,
+     1,
+     "! ~ & ^ | + << >>",
+     50,
+     4,
+     {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
+
     {"copyLSB",
      (funct_t) copyLSB,
      (funct_t) test_copyLSB,

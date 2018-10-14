@@ -331,6 +331,20 @@ int conditional(int x, int y, int z)
 }
 
 /*
+ * countLeadingZero - count the number of zero bits preceding the
+ *                    most significant one bit
+ *   Example: countLeadingZero(0x00000F00) = 20,
+ *            countLeadingZero(0x00000001) = 31
+ *   Legal ops: ! ~ & ^ | + << >>
+ *   Max ops: 50
+ *   Rating: 4
+ */
+int countLeadingZero(unsigned x)
+{
+    return 42;
+}
+
+/*
  * copyLSB - set all bits of result to least significant bit of x
  *   Example: copyLSB(5) = 0xFFFFFFFF, copyLSB(6) = 0x00000000
  *   Legal ops: ! ~ & ^ | + << >>
