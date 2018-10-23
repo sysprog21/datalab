@@ -88,8 +88,10 @@ int test_bitCount(int x)
 {
     int result = 0;
     int i;
-    for (i = 0; i < 32; i++)
+    for (i = 0; i < 31; i++)
         result += (x >> i) & 0x1;
+
+    result += (x >> 30 >> 1) & 0x1;
     return result;
 }
 
@@ -106,11 +108,14 @@ int test_bitMatch(int x, int y)
 {
     int i;
     int result = 0;
-    for (i = 0; i < 32; i++) {
+    for (i = 0; i < 31; i++) {
         int mask = 1 << i;
         int bit = (x & mask) == (y & mask);
         result |= bit << i;
     }
+    int mask = 1 << 30 << 1;
+    int bit = (x & mask) == (y & mask);
+    result |= bit << 30 << 1;
     return result;
 }
 
@@ -128,8 +133,9 @@ int test_bitParity(int x)
 {
     int result = 0;
     int i;
-    for (i = 0; i < 32; i++)
+    for (i = 0; i < 31; i++)
         result ^= (x >> i) & 0x1;
+    result ^= (x >> 30 >> 1) & 0x1;
     return result;
 }
 
@@ -137,11 +143,14 @@ int test_bitReverse(int x)
 {
     int result = 0;
     int i;
-    for (i = 0; i < 32; i++) {
+    for (i = 0; i < 31; i++) {
         int bit = (x >> i) & 0x1;
         int pos = 31 - i;
         result |= bit << pos;
     }
+    int bit = (x >> 30 >> 1) & 0x1;
+    int pos = 31 - 31;
+    result |= bit << pos;
     return result;
 }
 
@@ -404,7 +413,7 @@ int test_getByte(int x, int n)
 
 int test_greatestBitPos(int x)
 {
-    unsigned mask = 1 << 31;
+    unsigned mask = 1 << 30 << 1;
     if (x == 0)
         return 0;
     while (!(mask & x)) {
@@ -433,10 +442,10 @@ int test_intLog2(int x)
     int mask, result;
     /* find the leftmost bit */
     result = 31;
-    mask = 1 << result;
+    mask = 1 << (result - 1) << 1;
     while (!(x & mask)) {
         result--;
-        mask = 1 << result;
+        mask = 1 << (result - 1) << 1;
     }
     return result;
 }
@@ -547,12 +556,15 @@ int test_leftBitCount(int x)
 {
     int result = 0;
     int i;
-    for (i = 31; i >= 0; i--) {
-        int bit = (x >> i) & 0x1;
+    for (i = 31; i >= 1; i--) {
+        int bit = (x >> (i - 1) >> 1) & 0x1;
         if (!bit)
             break;
         result++;
     }
+    int bit = (x >> 0) & 0x1;
+    if (bit)
+        result++;
     return result;
 }
 
@@ -564,7 +576,11 @@ int test_logicalNeg(int x)
 int test_logicalShift(int x, int n)
 {
     unsigned u = (unsigned) x;
-    unsigned shifted = u >> n;
+    unsigned shifted;
+    if (n == 31)
+        shifted = u >> 30 >> 1;
+    else
+        shifted = u >> n;
     return (int) shifted;
 }
 
@@ -734,7 +750,7 @@ int test_twosComp2SignMag(int x)
 {
     int sign = x < 0;
     int mag = x < 0 ? -x : x;
-    return (sign << 31) | mag;
+    return (sign << 30 << 1) | mag;
 }
 
 int test_upperBits(int x)
