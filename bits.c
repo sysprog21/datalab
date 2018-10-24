@@ -266,46 +266,24 @@ int bitCount(int x)
     int C1_2 = A & B;  // shift two
 
     //*****
+    int h = 15 + (15 << 8) + (15 << 16) + (15 << 24);
+    int hh = 1 + (1 << 4) + (1 << 8) + (1 << 12) + (1 << 16) + (1 << 20) +
+             (1 << 24) + (1 << 28);
+    int aa1 = S1_1 & hh;
+    int aa2 = C1_1 & hh;
+    int aa3 = S1_2 & hh;
+    int aa4 = C1_2 & hh;
+    int Sum = aa1 + (aa2 << 1) + (aa3 << 1) + (aa4 << 2);
+    Sum = Sum + (Sum >> 4);
+    Sum = Sum & h;
+    Sum = Sum + (Sum >> 8);
 
-    A = S1_1;
-    B = S1_1 >> 4;
-    int S2_1 = A ^ B;  // zero
-    int C2_1 = A & B;  // one
-
-    A = C1_1;
-    B = C1_1 >> 4;
-    int S2_2 = A ^ B;  // one
-    int C2_2 = A & B;  // two
-
-    A = S1_2;
-    B = S1_2 >> 4;
-    int S2_3 = A ^ B;  // one
-    int C2_3 = A & B;  // two
-
-    A = C1_2;
-    B = C1_2 >> 4;
-    int S2_4 = A ^ B;  // two
-    int C2_4 = A & B;  // three
-    //*****
-    int h = 1 + (1 << 8) + (1 << 16) + (1 << 24);
-    int a1 = S2_1 & h;
-    int a2 = C2_1 & h;
-    int a3 = S2_2 & h;
-    int a4 = C2_2 & h;
-    int a5 = S2_3 & h;
-    int a6 = C2_3 & h;
-    int a7 = S2_4 & h;
-    int a8 = C2_4 & h;
-
-    int sum = a1 + (a2 << 1) + (a3 << 1) + (a4 << 2) + (a5 << 1) + (a6 << 2) +
-              (a7 << 2) + (a8 << 3);
-    int ans = sum + (sum >> 8);
-    ans = ans + (ans >> 16);
-    ans = ans & ((1 << 6) + (~1 + 1));
+    Sum = Sum + (Sum >> 16);
+    Sum = Sum & ((1 << 6) + (~1 + 1));
 
 
 
-    return ans;
+    return Sum;
 }
 
 /*
