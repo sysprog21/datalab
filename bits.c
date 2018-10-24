@@ -249,7 +249,63 @@ int bitAnd(int x, int y)
  */
 int bitCount(int x)
 {
-    return 42;
+    int A = x;
+    int B = x >> 1;
+    int S = A ^ B;  // count even number
+    int C = A & B;  // count even number and shift left one bit
+
+    //*****
+    A = S;
+    B = S >> 2;
+    int S1_1 = A ^ B;
+    int C1_1 = A & B;  // shift one
+
+    A = C;
+    B = C >> 2;
+    int S1_2 = A ^ B;  // shift one
+    int C1_2 = A & B;  // shift two
+
+    //*****
+
+    A = S1_1;
+    B = S1_1 >> 4;
+    int S2_1 = A ^ B;  // zero
+    int C2_1 = A & B;  // one
+
+    A = C1_1;
+    B = C1_1 >> 4;
+    int S2_2 = A ^ B;  // one
+    int C2_2 = A & B;  // two
+
+    A = S1_2;
+    B = S1_2 >> 4;
+    int S2_3 = A ^ B;  // one
+    int C2_3 = A & B;  // two
+
+    A = C1_2;
+    B = C1_2 >> 4;
+    int S2_4 = A ^ B;  // two
+    int C2_4 = A & B;  // three
+    //*****
+    int h = 1 + (1 << 8) + (1 << 16) + (1 << 24);
+    int a1 = S2_1 & h;
+    int a2 = C2_1 & h;
+    int a3 = S2_2 & h;
+    int a4 = C2_2 & h;
+    int a5 = S2_3 & h;
+    int a6 = C2_3 & h;
+    int a7 = S2_4 & h;
+    int a8 = C2_4 & h;
+
+    int sum = a1 + (a2 << 1) + (a3 << 1) + (a4 << 2) + (a5 << 1) + (a6 << 2) +
+              (a7 << 2) + (a8 << 3);
+    int ans = sum + (sum >> 8);
+    ans = ans + (ans >> 16);
+    ans = ans & ((1 << 6) + (~1 + 1));
+
+
+
+    return ans;
 }
 
 /*
