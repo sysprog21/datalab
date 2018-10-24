@@ -301,7 +301,14 @@ int bitCount(int x)
  */
 int bitMask(int highbit, int lowbit)
 {
-    return 42;
+    int h = (~1 + 1) << 1;
+    h = h << highbit;
+    h = ~h;
+    int l = 1 << (lowbit);
+    l = l + (~1 + 1);
+
+    int mask = h & ~l;
+    return mask;
 }
 
 /*
