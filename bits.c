@@ -321,7 +321,7 @@ int bitMask(int highbit, int lowbit)
  */
 int bitMatch(int x, int y)
 {
-    return 42;
+    return (x & y) | (~x & ~y);
 }
 
 /*
@@ -333,7 +333,7 @@ int bitMatch(int x, int y)
  */
 int bitNor(int x, int y)
 {
-    return 42;
+    return (~x) & (~y);
 }
 
 /*
@@ -345,7 +345,7 @@ int bitNor(int x, int y)
  */
 int bitOr(int x, int y)
 {
-    return 42;
+    return ~((~x) & (~y));
 }
 
 /*
@@ -357,7 +357,13 @@ int bitOr(int x, int y)
  */
 int bitParity(int x)
 {
-    return 42;
+    int sum = x ^ (x >> 1);
+    sum = sum ^ (sum >> 2);
+    sum = sum ^ (sum >> 4);
+    sum = sum ^ (sum >> 8);
+    sum = sum ^ (sum >> 16);
+    sum = sum & 1;
+    return sum;
 }
 
 /*
