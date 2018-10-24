@@ -219,7 +219,13 @@ int anyOddBit(int x)
  */
 int bang(int x)
 {
-    return 42;
+    x = x | (x >> 1);
+    x = x | (x >> 2);
+    x = x | (x >> 4);
+    x = x | (x >> 8);
+    x = x | (x >> 16);
+    x = ~x & 1;
+    return x;
 }
 
 /*
