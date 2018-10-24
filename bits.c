@@ -266,20 +266,23 @@ int bitCount(int x)
     int C1_2 = A & B;  // shift two
 
     //*****
-    int h = 15 + (15 << 8) + (15 << 16) + (15 << 24);
-    int hh = 1 + (1 << 4) + (1 << 8) + (1 << 12) + (1 << 16) + (1 << 20) +
-             (1 << 24) + (1 << 28);
-    int aa1 = S1_1 & hh;
-    int aa2 = C1_1 & hh;
-    int aa3 = S1_2 & hh;
-    int aa4 = C1_2 & hh;
+    int d = 15 + (15 << 16);
+    int dd = d + (d << 8);
+    int k = 1 + (1 << 16);
+    int kk = k + (k << 8);
+    int kkk = kk + (kk << 4);
+
+    int aa1 = S1_1 & kkk;
+    int aa2 = C1_1 & kkk;
+    int aa3 = S1_2 & kkk;
+    int aa4 = C1_2 & kkk;
     int Sum = aa1 + (aa2 << 1) + (aa3 << 1) + (aa4 << 2);
     Sum = Sum + (Sum >> 4);
-    Sum = Sum & h;
+    Sum = Sum & dd;
     Sum = Sum + (Sum >> 8);
 
     Sum = Sum + (Sum >> 16);
-    Sum = Sum & ((1 << 6) + (~1 + 1));
+    Sum = Sum & ((31 << 1) + 1);
 
 
 
